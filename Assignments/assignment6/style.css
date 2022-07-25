@@ -1,0 +1,18 @@
+body{
+  background-color: #AEB7B3;
+  color: white;
+}
+
+/* nav-list style */
+#nav-list{
+  list-style-type: none;
+}
+
+#nav-list li{
+  display: inline;
+}
+
+#nav-list li a:hover{
+  color: white;
+  
+}
