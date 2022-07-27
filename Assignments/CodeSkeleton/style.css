@@ -1,0 +1,8 @@
+body{
+  /* background-color:purple; */
+  background-image: url('Assets/purple background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
