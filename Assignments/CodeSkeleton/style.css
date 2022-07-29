@@ -4,5 +4,13 @@ body{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
+  color: black;
+}
+
+h1{
+  text-align:center;
+}
+
+p{
+  text-align:center;
 }
