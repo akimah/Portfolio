@@ -1,0 +1,75 @@
+/* JUSTIF-CONTTENT: HORIZONTAL SPACING
+ALIGN-ITEMS: VERTICAL SPACING
+ */
+ 
+.flex-center{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.flex-left{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.flex-right{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.container-1{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 600px;
+  height: 600px;
+}
+
+.container-2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 600px;
+}
+
+.item{
+  height: 50px;
+  /* width: 20% */
+  /* background-color: orange; */
+  flex: 1;
+  text-align: center;
+}
+
+.item-2{
+  height: 50px;
+  width: 300px;
+}
+
+
+
+
+
+/* Utility Class */
+.red-bg{
+  background-color: red;
+}
+
+.blue-bg{
+  background-color: blue;
+}
+
+.green-bg{
+  background-color: green;
+}
+
+.pink-bg{
+  background-color: pink;
+}
+
+.yellow-bg{
+  background-color: yellow;
+}
