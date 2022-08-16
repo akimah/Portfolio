@@ -1,7 +1,7 @@
 /* JUSTIF-CONTTENT: HORIZONTAL SPACING
 ALIGN-ITEMS: VERTICAL SPACING
  */
- 
+
 .flex-center{
   display: flex;
   justify-content: center;
@@ -36,6 +36,18 @@ ALIGN-ITEMS: VERTICAL SPACING
   width: 600px;
 }
 
+.container-3{
+  width: 300px;
+  display: contents;
+  justify-content: space-around;
+}
+
+.container-4{
+  width: 300px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .item{
   height: 50px;
   /* width: 20% */
@@ -49,7 +61,20 @@ ALIGN-ITEMS: VERTICAL SPACING
   width: 300px;
 }
 
+.break{
+  background-color: #fff
+  padding: 20px;
+}
 
+.break2{
+  background-color: #fff
+  padding: 20px;
+}
+
+.break3{
+  background-color: #fff
+  padding: 20px;
+}
 
 
 
