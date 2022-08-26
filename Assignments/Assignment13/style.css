@@ -1,0 +1,65 @@
+body{
+  /* background-color: cyan; */
+}
+
+.container{
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 1fr 50px;
+  grid-template-areas:
+    "header header header header header"
+    "sidenav content content content content"
+    "sidenav content content content content"
+    "sidenav content content content content"
+    "footer footer footer footer footer"
+}
+
+.header{
+  height: 100px;
+  background-color: #8FED90;
+  grid-area: header;
+  padding: 20px;
+  text-align: center;
+}
+
+.sidenav{
+  width: 150px;
+  background-color: #DDFEDC;
+  grid-area:  sidenav;
+  padding: 30px;
+  text-decoration: underline;
+}
+
+.content{
+  /* background-color: cyan; */
+  grid-area: content;
+}
+
+.footer{
+  height: 50px;
+  background-color: #008001;
+  grid-area: footer;
+  padding: 20px;
+}
+
+.nested{
+  display: flex;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.dog{
+  display: block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.monkey{
+  display: block;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+
+}
