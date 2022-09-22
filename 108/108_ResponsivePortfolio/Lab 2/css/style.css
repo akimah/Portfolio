@@ -93,6 +93,7 @@ nav{
 #twoCards{
   grid-area: twoCardsArea;
   background-color: lavender;
+  margin:20px;
 }
 
 footer{
