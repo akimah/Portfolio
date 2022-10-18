@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 22 - Bouncing Ball</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #room {
+        border: 5px solid black;
+        position: relative;
+      }
+      #ball {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+        border-radius: 50%;
+        font-weight: bold;
+        font-family: Verdana;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="room">
+      <div id="ball"></div>
+    </div>
+    <script type="text/javascript">
+      let roomWidth = 600;
+      let roomHeight = 500;
+      let ballWidth = 50;
+      let ballHeight = 50;
+
+      let room = document.getElementById('room');
+      room.style.width = roomWidth + 'px';
+      room.style.height = roomHeight + 'px';
+
+      let ball = document.getElementById('ball');
+      ball.style.width = ballWidth + 'px';
+      ball.style.height = ballHeight + 'px';
+
+      let ballY = 0;
+      let ballYSpeed = 0;
+      let gravity = 0.3;
+
+      function moveBall() {
+        ballYSpeed += gravity;
+        ballY += ballYSpeed;
+
+        if (ballY + ballHeight > roomHeight) {
+          ballY = roomHeight - ballHeight;
+          ballYSpeed *= -0.85;
+        }
+
+        ball.style.top = ballY + 'px';
+      }
+
+      setInterval(moveBall, 10);
+    </script>
+  </body>
+</html>
