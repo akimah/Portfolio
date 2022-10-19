@@ -27,7 +27,21 @@
 
     <!-- Lightbox JavaScript -->
     <script type="text/javascript">
-    
+    let lightboxContainer = document.getElementById('lightboxConainer');
+    let lightbox = document.getElementById('lightbox');
+
+    let galleryImage = document.getElementByClassName('galleryImage');
+    for (let i = 0; i < galleryImage.length; i++) {
+      let galleryImage = galleryImages[i];
+      galleryImage.onclick = function() {
+        lightboxContainer.classList.add("display");
+        lightbox.src = this.src;
+        lightbox.alt = this.alt;
+      };
+    }
+
+    let closers = document.getElementByClassName('closer');
+    for (let i = 0, i )
     </script>
   </body>
 </html>
